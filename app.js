@@ -18,8 +18,6 @@ app.use("/donor", donorRoutes);
 // database connection
 async function connectDb() {
     await mongoose.connect("mongodb+srv://aminuldev404:82A6WkA6fHFnbQL2@blooddonation.rtkjb.mongodb.net/", {
-        //mongodb+srv://sajjad:Sajjad1122@cluster0.zu7ng5g.mongodb.net/
-        //dbName: "blood-finder"
         dbName: "blood-finder"
     });
     console.log("db successful connected");
